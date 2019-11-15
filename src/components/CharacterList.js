@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import CharacterCard from "./CharacterCard";
 import SearchForm from "./SearchForm";
 import axios from "axios";
 
@@ -20,15 +21,20 @@ export default function CharacterList(props) {
   return (
     <section className="character-list">
       <SearchForm characterArray={characters} />
-      {characters.map(character => (
-        <div>
-        <img src={character.image} alt ={character.image} />
-        <h2>{character.name}</h2>
-        <h3>{character.species}</h3>
-        <h3>{character.status}</h3>
-        </div>
-        
-      ))}
+      
+      <CharacterCard characterArray={characters} />
     </section>
   );
 }
+
+
+
+// {characters.map(character => (
+//   <div>
+//   <img src={character.image} alt ={character.image} />
+//   <h2>{character.name}</h2>
+//   <h3>{character.species}</h3>
+//   <h3>{character.status}</h3>
+//   </div>
+  
+// ))}
