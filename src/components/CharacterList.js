@@ -20,21 +20,12 @@ export default function CharacterList(props) {
 
   return (
     <section className="character-list">
-      <SearchForm characterArray={characters} />
+      <SearchForm characterArray={characters}/>
+      {characters.map(character => (
+        <CharacterCard image={character.image} name={character.name} species={character.species} status={character.status} />
+      ))}
       
-      <CharacterCard characterArray={characters} />
     </section>
   );
 }
 
-
-
-// {characters.map(character => (
-//   <div>
-//   <img src={character.image} alt ={character.image} />
-//   <h2>{character.name}</h2>
-//   <h3>{character.species}</h3>
-//   <h3>{character.status}</h3>
-//   </div>
-  
-// ))}
