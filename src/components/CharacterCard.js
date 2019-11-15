@@ -8,6 +8,9 @@ const CardDivStyled = styled.div`
   width: 40%;
   text-align: center;
   margin: 0 auto;
+  font-family: 'Alata', sans-serif;
+  background-color: lightslategray;
+  color: white;
 `;
 
 export default function CharacterCard(props) {
@@ -15,8 +18,8 @@ export default function CharacterCard(props) {
   return (
     <section className ="character-list">
       <CardDivStyled>
-      <img src={props.image} alt ={props.image} />
-      <h2>Name :{props.name}</h2>
+      <img src={props.image} alt ={props.name} />
+      <h2>Name: {props.name}</h2>
       <h3>Species: {props.species}</h3>
       <h3>Status: {props.status}</h3>
       </CardDivStyled>
