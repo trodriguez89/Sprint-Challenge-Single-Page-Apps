@@ -28,8 +28,7 @@ Demonstrate your understanding of this Sprint's concepts by answering the follow
 - [ ]  Explain benefit(s) using `client-side routing`?
 
 > Answer:
-
-## Project Set Up
+It's client based and not server based. When a user clicks on a link the URL changes but the request to the server does not occur. Prevents a whole page refresh. Routing between pages is faster. Smoother transitions between pages.
 
 Follow these steps to set up and work on your project:
 
