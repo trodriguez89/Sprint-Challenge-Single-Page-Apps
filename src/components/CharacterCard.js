@@ -1,15 +1,25 @@
 import React from "react";
+import styled from "styled-components";
+
+const CardDivStyled = styled.div`
+  border: 1px solid black;
+  padding: 20px 0;
+  border-radius: 5px;
+  width: 40%;
+  text-align: center;
+  margin: 0 auto;
+`;
 
 export default function CharacterCard(props) {
 
   return (
     <section className ="character-list">
-      <div>
+      <CardDivStyled>
       <img src={props.image} alt ={props.image} />
       <h2>Name :{props.name}</h2>
       <h3>Species: {props.species}</h3>
       <h3>Status: {props.status}</h3>
-      </div>
+      </CardDivStyled>
       </section>
   );
 }
